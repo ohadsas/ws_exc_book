@@ -14,7 +14,7 @@
 
  /*Get all Book Stock*/
  Book.prototype.getAllBooks = function() {
- 		console.log("===============" + "\n" + "All Books:" +"\n" + "===============");
+        console.log("===============" + "\n" + "All Books:" +"\n" + "===============");
      if (BookList.Book.length == 0) {
          console.log("There Are No Books Exist!!");
          return 0;
@@ -30,7 +30,7 @@
 
  /*Get Best seller book by Month*/
  Book.prototype.getAllBestSellersByMonth = function(_month) {
- 	 console.log("====================" + "\n" + "Book by Month:" + _month + "\n" + "====================");
+     console.log("====================" + "\n" + "Book by Month:" + _month + "\n" + "====================");
      var exist = false;
      var Stack = [];
      for (var i = 0; i < BookList.Book.length; i++) {
@@ -71,7 +71,7 @@
 
  /*Get Books By Author and month*/
  Book.prototype.getBookByAuthorAndMonth = function(_author, _month) {
- 	 console.log("===========================" + "\n" + "Book by : " + _author + " in : "+ _month + "\n" + "===========================");
+     console.log("===========================" + "\n" + "Book by : " + _author + " in : "+ _month + "\n" + "===========================");
      var Stack = [];
      var exist = false;
      for (var i = 0; i < BookList.Book.length; i++) {
